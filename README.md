@@ -53,3 +53,28 @@ Box plot
 Correlation Heatmap
 
 Pair Plot
+
+# Prediction Models
+
+To predict the stock's closing price, the four models were developed : Linear Regression, Lasso Regression, Ridge Regression and Random Forest. 'Open', 'High', and 'Low' features were aggregated by taking their mean and engineered additional features using lag values to capture temporal trends and patterns, including potential effects of the fraud case. These models were evaluated using various metrics to gain insights into the data, facilitating better decision-making for improved outcomes. 
+
+1. Linear Regression:
+
+A linear regression model is a statistical method used to model the relationship between one or more independent variables (predictors) and a dependent variable (outcome). It assumes a linear relationship between the predictors and the outcome, where the outcome variable is a linear combination of the predictor variables, with each predictor weighted by a coefficient.
+
+2. Lasso Regression:
+
+Lasso regression, short for Least Absolute Shrinkage and Selection Operator, is a regression technique that performs both variable selection and regularization to improve the predictive performance and interpretability of the model.
+
+3. Ridge Regression:
+
+Ridge Regression, also known as L2 Regularization, is a linear regression technique that incorporates regularization to prevent overfitting and improve the generalization of the model.
+
+4. Random Forest:
+
+Random Forest Regression is a machine learning technique that utilizes an ensemble of decision trees to make predictions. It's well-suited for regression tasks and offers advantages such as handling non-linear relationships and interactions between features, as well as being robust to overfitting and capable of handling large datasets with high dimensionality.
+
+
+
+
+
