@@ -100,3 +100,6 @@ I aggregated 'Open', 'High', and 'Low' features by taking their mean and enginee
 
 Four machine learning models were constructed - Linear Regression, Lasso Regression, Ridge Regression, and Random Forest. Evaluation metrics provide insights into data, aiding decision-making for better outcomes. Cross-validation was utilized to estimate optimal values, ensuring robust and generalizable models for new data.
 
+SHAP (SHapley Additive exPlanations) is an advanced method for studying model explainability in machine learning. It calculates the contribution of each feature to the final prediction, providing insights into how individual components of the model influence the overall outcome.
+
+Given the dataset and features, our model demonstrates strong performance across all data points, showcasing its robustness in capturing patterns and trends within the data. This indicates that the model effectively generalizes to unseen instances and maintains consistent accuracy in its predictions. Such reliability underscores the efficacy of our model in addressing the complexities inherent in the dataset, thereby instilling confidence in its predictive capabilities.
