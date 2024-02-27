@@ -74,7 +74,29 @@ Ridge Regression, also known as L2 Regularization, is a linear regression techni
 
 Random Forest Regression is a machine learning technique that utilizes an ensemble of decision trees to make predictions. It's well-suited for regression tasks and offers advantages such as handling non-linear relationships and interactions between features, as well as being robust to overfitting and capable of handling large datasets with high dimensionality.
 
+# Evaluation Metrics
 
+Evaluation metrics are quantitative measures used to assess the performance of a machine learning model. These metrics provide insights into how well the model is performing and can help determine if the model is suitable for its intended task. Some common evaluation metrics for regression tasks include:
 
+Mean Absolute Error (MAE): The average of the absolute differences between the predicted and actual values. It provides a measure of the average magnitude of errors in the predictions.
 
+Mean Squared Error (MSE): The average of the squared differences between the predicted and actual values. It penalizes larger errors more heavily than MAE.
+
+Root Mean Squared Error (RMSE): The square root of the MSE. It provides an interpretable measure of the average magnitude of errors in the same units as the target variable.
+
+R-squared (R2) Score: A measure of how well the model fits the data, indicating the proportion of variance in the target variable that is explained by the model. It ranges from 0 to 1, with higher values indicating a better fit.
+
+Adjusted R-squared: A variant of R2 that adjusts for the number of predictors in the model. It penalizes the inclusion of additional predictors that do not significantly improve the model fit.
+
+# Conclusion
+
+The primary goal is to forecast the monthly closing price of Yes Bank's stock, considering the impact of the 2018 fraud case, using historical monthly stock price data. The dataset includes metrics such as opening, closing, highest, and lowest prices for each month since the establishment of Yes Bank.
+
+Due to fluctuations over time, especially significant events like the 2018 fraud, variables like 'Close' and 'Open', 'High', 'Low' may exhibit positive skewness. Applying log transformation has led to a more symmetrical distribution, improving the accuracy of predictions. The closing price shows high correlation with other variables.
+
+The log transformation effectively reduced outliers in the dataset, contributing to a more robust model. However, completely removing outliers from a small dataset is generally not advisable.
+
+I aggregated 'Open', 'High', and 'Low' features by taking their mean and engineered additional features using lag values to capture temporal trends and patterns, including potential effects of the fraud case.
+
+Four machine learning models were constructed - Linear Regression, Lasso Regression, Ridge Regression, and Random Forest. Evaluation metrics provide insights into data, aiding decision-making for better outcomes. Cross-validation was utilized to estimate optimal values, ensuring robust and generalizable models for new data.
 
