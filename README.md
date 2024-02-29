@@ -34,7 +34,7 @@ The variables are described as follows:
 
 * Converted column Date to datetime data type.
 
- # EDA 
+ # Exploratory Data Analysis 
 
 The data visualization is performed using mainly seaborn & matplotlib library. For visualization, the following charts are used:
 
